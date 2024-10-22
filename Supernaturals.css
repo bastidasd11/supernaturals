@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
+button {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: red;
+}
+
+button:hover {
+  background-color: rgb(143, 1, 1);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: red;
+  font-size: 1.6em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding:  5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: red;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(images/fondo-supernatural.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+#definicion .container {
+  text-align: center;
+  padding: 200px 12px;
+
+}
+
+#reparto {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#reparto .container {
+  padding: 150px 12px;
+}
+
+#reparto h2 {
+  margin-top: 0; 
+  font-size: 3.2em; 
+}
+
+#reparto p {
+  display: none;
+}
+
+#reparto .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(images/Dean.jpg);
+}
+
+.carta:nth-child(2) {
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(images/Sam.jpg);
+}
+
+.carta:nth-child(3) {
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(images/Castiel.jpg);
+}
+
+#series-parecidas .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#series-parecidas li {
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+#episodios .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+  color: black;
+}
+
+#episodios {
+  background-color: white;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #definicion .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #definicion .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #definicion h2 {
+    margin-top: 0;
+  }
+
+  #definicion .img-container {
+    background-image: url(images/supernatural.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+
+  #reparto .personajes {
+    display: flex;
+    justify-content: center;
+  }
+
+  #reparto p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #reparto h3 {
+    margin-top: 0;
+  }
+
+  #reparto .carta {
+    padding: 50px;
+    width: 500px;
+  }
+
+
+  footer .container {
+    justify-content: flex-end;
+  }
+
+}
+
+
+
+
+
